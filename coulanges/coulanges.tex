@@ -1,6 +1,38 @@
-Title: Computer Vision Motion Tracking Humanoid Robot
-Authors: Sejal Nagrani & Kaitlin Coulanges
-This project aims to develop a humanoid robot capable of basic controlled limb function and human-robot interaction through computer vision. A key challenge in developing human-robot interaction is allowing robots to respond to and replicate human movements rather than relying solely on predefined movements. The initial phase of the project will rely solely on an Arduino to control all robot functions. An Arduino will control servo motors, which allow the robot to execute predefined arm movements. Once the Arduino-powered movement is reliable, a Raspberry Pi and integrated camera will be used to mimic arm motions. By utilizing pose estimation algorithms, the robot will analyze human positions, translate these movements into commands for the Arduino, and allow the robot to replicate the human’s motion. Overall, this project will combine the principles of design, electronics, and artificial intelligence to show how visual models can be integrated with computer systems to create a humanoid system.
+\documentclass[12pt,conference,onecolumn]{IEEEtran}
 
-Key Words: humanoid, computer vision, arduino, servo, Raspberry Pi, pose estimation
- Library of Congress Classification: TJ211.3 — Robot vision
+\usepackage[hidelinks]{hyperref}
+\usepackage{siunitx}
+
+\title{Computer vision motion tracking humanoid robot}
+\author{%
+\IEEEauthorblockN{Sejal Nagrani}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427snagrani@frhsd.com}{427snagrani@frhsd.com}}\and
+\IEEEauthorblockN{Kaitlin Coulanges}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427kcoulanges@frhsd.com}{427kcoulanges@frhsd.com}}
+}
+
+\date{January 28, 2027}
+
+\newcommand{\keywords}{humanoid, computer vision, arduino, servo, Raspberry Pi, pose estimation}
+
+\usepackage{hyperref}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={Omar Ahmadzada, Shreena Desai, and K M August},
+pdfkeywords={\keywords}}}
+\makeatother
+
+\begin{document}
+\maketitle 
+
+\begin{abstract}
+This project aims to develop a humanoid robot capable of basic controlled limb function and human-robot interaction through computer vision. A key challenge in developing human-robot interaction is allowing robots to respond to and replicate human movements rather than relying solely on predefined movements. The initial phase of the project will rely solely on an Arduino to control all robot functions. An Arduino will control servo motors, which allow the robot to execute predefined arm movements. Once the Arduino-powered movement is reliable, a Raspberry Pi and integrated camera will be used to mimic arm motions. By utilizing pose estimation algorithms, the robot will analyze human positions, translate these movements into commands for the Arduino, and allow the robot to replicate the human’s motion. Overall, this project will combine the principles of design, electronics, and artificial intelligence to show how visual models can be integrated with computer systems to create a humanoid system.
+\end{abstract}
+
+\begin{IEEEkeywords}
+\keywords
+\end{IEEEkeywords}
+
+\end{document}
+
+% Library of Congress Classification: TJ211.3 — Robot vision

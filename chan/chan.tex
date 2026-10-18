@@ -1,0 +1,42 @@
+\documentclass[12pt,conference,onecolumn]{IEEEtran}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{siunitx}
+
+\title{Feedback-based beam alignment for self-correcting free-space optical communication: 
+Internship with {IEEE}}
+\author{%
+\IEEEauthorblockN{Justin Chan}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427jchan@frhsd.com}{427jchan@frhsd.com}}\and
+\IEEEauthorblockN{Timothy Chung}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427tchung@frhsd.com}{427tchung@frhsd.com}}\and
+\IEEEauthorblockN{K August}\IEEEauthorblockA{\href{mailto:kit.august@gmail.com}{kit.august@gmail.com}}\and
+\IEEEauthorblockN{Theodore Sizer}\IEEEauthorblockA{\href{mailto:kit.august@gmail.com}{kit.august@gmail.com}}
+}
+
+\date{January 28, 2027}
+
+\newcommand{\keywords}{photonics, IEEE, free-space optical links, quadrant photodiode,
+proportional-integral-derivative, laser, Python, internship}
+
+\usepackage{hyperref}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={Justin Chan, Timothy Chung, K M August, and Tod Sizer},
+pdfkeywords={\keywords}}}
+\makeatother
+
+\begin{document}
+\maketitle 
+
+\begin{abstract}
+Photonics is the science of generating, controlling, manipulating, and detecting light. It allows for energy-efficient technological developments, like in communications, where pulses of light can carry large amounts of data. An application of photonics is free-space optical (FSO) communication, which offers greater bandwidth and resistance to inference than radio links because it transmits data directly from point to point through a laser beam. The narrow beams that make FSO links so efficient also result in their vulnerability to slight misalignments, where a minor impulse or vibration can entirely sever the connection. We are modeling a self-correcting FSO link that ensures the connection is secure with closed-loop feedback. The system contains a quadrant photodiode (QPD) that measures the horizontal and vertical error of the beam, which is sent to two proportional-integral-derivative (PID) controllers. The controllers operate the pan and tilt axes to direct a dual-axis servo gimbal that redirects the beam against the disturbance. Our work consists of modeling an equation of motion of the gimbal to derive the transfer function of the system plant, and representing it along with the controller, sensor, and motor in a feedback block diagram. We will design a simulation of the project in Python using libraries like NumPy and python-control to model the control system. We wish to test the system against realistic disturbances, and then create a physical prototype to test its functionality against the computer simulation. The performance of the system will be measured in the speed that the link corrects itself.
+\end{abstract}
+
+\begin{IEEEkeywords}
+\keywords
+\end{IEEEkeywords}
+
+\end{document}
+
+
