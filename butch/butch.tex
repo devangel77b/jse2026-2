@@ -1,14 +1,38 @@
-Deven Khettry, Matthew Butch, Rohan Dela Rosa
+\documentclass[12pt,conference,onecolumn]{IEEEtran}
 
-		LiDAR Project
-This project focuses on creating a mountable, portable LiDAR system which will basically scan a room, and then convert the data it scanned into a color coded map to demonstrate the technology. This able to quickly scrutinize any room and have information readily available to anyone who is curious in exploration of abandoned, hazardous or hard to reach environments
+\usepackage[hidelinks]{hyperref}
 
-To get a full angle view of the room and make sure it’s able to scan everything, our LiDAR (using the Garmin LiDAR-Lite v3 model) will be mounted on a tripod and a servo to make sure it can move around to see behind it and get any details it cannot clearly see. To store all the data the LiDAR collects through measuring time-of-flight of it’s lasers, we will use a microcontroller to store the measurements the sensor collects and then transferring it to a custom software. This then will be filtered and mapped out onto coordinates which will be organized by color and be able to be understood through analysis.
+\title{The wonderful world of LiDAR}
+\author{%
+\IEEEauthorblockN{Deven Khettry}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427mreznik@frhsd.com}{427mreznik@frhsd.com}}\and
+\IEEEauthorblockN{Matthew Butch}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427ssanrkitya@frhsd.com}{427ssankritya@frhsd.com}}\and
+\IEEEauthorblockN{Rohan Dela Rosa}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427lbrunie@frhsd.com}{427lbrunie@frhsd.com}}
+}
 
-To be able to process the data and visualize it, we will create a software with JavaScript and based on where the LiDAR is facing, the measurements and angles will be marked with different colors to be able to parse the depth and position of the details off the scanned area. This will be easy to interpret and will be analyzed in a computer. CloudCompare and LIO-SAM will be used as references to process the data from the LiDAR and the creation of the space digitally.
+\date{January 28, 2027}
 
-Once completed, it will not only be tested with rooms, but also 3D printed surfaces that will have different images to make sure it can measure depth and elevation properly. To conclude, the project will be able to demonstrate the capabilities of LiDAR hardware and integrate it with custom software for a mapping system.
+\newcommand{\keywords}{Portable LiDAR, 3D Spatial Mapping, Depth Sensing and Color-Coding, LiDAR-Lite v3, Point Cloud Visualization}
 
-Keywords: Portable LiDAR, 3D Spatial Mapping, Depth Sensing and Color-Coding, LiDAR-Lite v3, Point Cloud Visualization.
+\usepackage{hyperref}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={Mark Reznik, Soham Sankritya, and Lorenzo Brunie},
+pdfkeywords={\keywords}}}
+\makeatother
 
-Classification: TA1637–1638
+\begin{document}
+\maketitle 
+
+\begin{abstract}
+This project focuses on creating a mountable, portable LiDAR system which will basically scan a room, and then convert the data it scanned into a color coded map to demonstrate the technology. This able to quickly scrutinize any room and have information readily available to anyone who is curious in exploration of abandoned, hazardous or hard to reach environments. To get a full angle view of the room and make sure it’s able to scan everything, our LiDAR (using the Garmin LiDAR-Lite v3 model) will be mounted on a tripod and a servo to make sure it can move around to see behind it and get any details it cannot clearly see. To store all the data the LiDAR collects through measuring time-of-flight of it’s lasers, we will use a microcontroller to store the measurements the sensor collects and then transferring it to a custom software. This then will be filtered and mapped out onto coordinates which will be organized by color and be able to be understood through analysis. To be able to process the data and visualize it, we will create a software with JavaScript and based on where the LiDAR is facing, the measurements and angles will be marked with different colors to be able to parse the depth and position of the details off the scanned area. This will be easy to interpret and will be analyzed in a computer. CloudCompare and LIO-SAM will be used as references to process the data from the LiDAR and the creation of the space digitally. Once completed, it will not only be tested with rooms, but also 3D printed surfaces that will have different images to make sure it can measure depth and elevation properly. To conclude, the project will be able to demonstrate the capabilities of LiDAR hardware and integrate it with custom software for a mapping system.
+\end{abstract}
+
+\begin{IEEEkeywords}
+\keywords
+\end{IEEEkeywords}
+
+\end{document}
+
+%Classification: TA1637–1638

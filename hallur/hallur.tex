@@ -1,6 +1,37 @@
-Ayaan Hallur
-Jacob Pawelek 
-  Bobby Kapoor
+\documentclass[12pt,conference,onecolumn]{IEEEtran}
 
-Brain Paired Flappy Bird with Vibration Feedback
+\usepackage[hidelinks]{hyperref}
+
+\title{Brain paired Flappy Bird with vibration feedback}
+\author{%
+\IEEEauthorblockN{Ayaan Hallur}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427mreznik@frhsd.com}{427mreznik@frhsd.com}}\and
+\IEEEauthorblockN{Jacob Pawelek}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427ssanrkitya@frhsd.com}{427ssankritya@frhsd.com}}\and
+\IEEEauthorblockN{Bobby Kapoor}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427lbrunie@frhsd.com}{427lbrunie@frhsd.com}}
+}
+
+\date{January 28, 2027}
+
+\newcommand{\keywords}{need some}
+
+\usepackage{hyperref}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={Ayaan Hallur, Jacob Pawelek, and Bobby Kapoor},
+pdfkeywords={\keywords}}}
+\makeatother
+
+\begin{document}
+\maketitle 
+
+\begin{abstract}
 Flappy Bird is an entertainment application where the player is a pixilated bird that jumps every time the screen is interacted with. When the screen is not being interacted with, the bird will fall. If the player collides with a pipe or the ground, the bird will safely return to the beginning and they will lose. The goal of the game is to time the bird jumps in order to have the bird fly through as many gaps as possible. The traditional implementation of Flappy Bird relies on physical inputs from a keyboard, mouse, or touchscreen to make the bird jump. Doing it this way provides a new challenge to the user and  allows the game to be played without the need for hands. This project instead uses an input based on the user's blinks, and it does this by specifically using the electrical disturbances that blinking produces in EEG readings, known as artifacts, as the jump signal. Over the fall semester, we are designing and building a Python-based, Flappy Bird–style game in PyGame. We are using a Muse 2 EEG headset and the muselsl library to detect blink artifacts against set thresholds. We are also connecting a PiShock vibration collar, controlled through its Python library, that buzzes the user when the bird collides with an obstacle, which deepens immersion and provides a stimulus to succeed. The Muse 2 is chosen for its built-in Python compatibility and cost effectiveness. 
+\end{abstract}
+
+\begin{IEEEkeywords}
+\keywords
+\end{IEEEkeywords}
+
+\end{document}
+

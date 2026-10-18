@@ -1,1 +1,35 @@
+\documentclass[12pt,conference,onecolumn]{IEEEtran}
+
+\usepackage[hidelinks]{hyperref}
+
+\title{The wonderful world of traffic modeling}
+\author{%
+\IEEEauthorblockN{Ella Pechersky}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427mreznik@frhsd.com}{427mreznik@frhsd.com}}\and
+\IEEEauthorblockN{David Pevzner}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427ssanrkitya@frhsd.com}{427ssankritya@frhsd.com}}
+}
+
+\date{January 28, 2027}
+
+\newcommand{\keywords}{needs some}
+
+\usepackage{hyperref}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={Ella Pechersky and David Pevzner},
+pdfkeywords={\keywords}}}
+\makeatother
+
+\begin{document}
+\maketitle 
+
+\begin{abstract}
 Traffic congestion remains a critical urban challenge, leading to economic losses, increased vehicular emissions, and profound commuter frustration. Effective traffic monitoring and predictive modeling provide vital insights to city planners and engineers to improve infrastructure, ultimately optimizing traffic flow and creating more convenient roadways. To address this challenge, we predicted traffic behavior based on current vehicle density and previous traffic data. To do this, solved the LWR model partial differential equation (PDE) numerically while accounting for inflow/outflow and other factors, using data from the Caltrans Performance Measurement System (PeMS) section of the California Department of Transportation website to calibrate our model and verify its effectiveness in predicting traffic evolution. In particular, we focused on data from a roughly two-mile stretch of I-710 North in Los Angeles, California. As our final product, we have developed an interface displaying the traffic evolution as predicted by our model, overlaying a map of the stretch of the highway, with darker colors representing more traffic. 
+\end{abstract}
+
+\begin{IEEEkeywords}
+\keywords
+\end{IEEEkeywords}
+
+\end{document}

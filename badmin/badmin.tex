@@ -1,11 +1,42 @@
-Title:
-Who Pays for Driver Pay? Stochastic Modeling of Surge Pricing in NYC Rideshare
-Authors:
-Ansh Modani, Nimya Badmin, Kyle Koping
-Abstract:
+\documentclass[12pt,conference,onecolumn]{IEEEtran}
+
+\usepackage[hidelinks]{hyperref}
+
+\title{Who Pays for Driver Pay? Stochastic Modeling of Surge Pricing in NYC Rideshare}
+\author{%
+\IEEEauthorblockN{Ansh Modani}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427mreznik@frhsd.com}{427mreznik@frhsd.com}}\and
+\IEEEauthorblockN{Nimya Badmin}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427ssanrkitya@frhsd.com}{427ssankritya@frhsd.com}}\and
+\IEEEauthorblockN{Kyle Koping}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427lbrunie@frhsd.com}{427lbrunie@frhsd.com}}
+}
+
+\date{January 28, 2027}
+
+\newcommand{\keywords}{Stochastic calculus, surge pricing, rideshare, driver pay, supply and demand matching, Hamilton-Jacobi-Bellman equation, stochastic partial differential equations, optimal control, NYC Taxi and Limousine Commission, simulation}
+
+\usepackage{hyperref}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={Ansh Modani, Nimya Badmin, and Kyle Koping},
+pdfkeywords={\keywords}}}
+\makeatother
+
+\begin{document}
+\maketitle 
+
+\begin{abstract}
 Rideshare companies like Uber and Lyft implement dynamic processes like real-time supply and demand matching, dynamic surge pricing, and stochastic driver repositioning in order to fix traditional static and deterministic models designed for a perfect-world scenario. These models treat traffic congestion, rider demand, and driver availability as constant variables. In order to replicate these processes accurately, we have found that stochastic calculus (calculus with randomness added) is an effective way to model them. We will use Stochastic Partial Differential Equations (SPDEs) to model real-time supply and demand matching and the Hamilton-Jacobi-Bellman (HJB) equation to model dynamic surge pricing. To implement these models, we plan to write a Java simulation that uses real NYC Taxi and Limousine Commission (TLC) trip data to test these processes under real-world conditions. We expect our results to show that incorporating stochastic calculus lets rideshare companies optimize matching efficiency and adaptive surge pricing with real-world randomness.
-Keywords:
-Stochastic calculus, surge pricing, rideshare, driver pay, supply and demand matching, Hamilton-Jacobi-Bellman equation, stochastic partial differential equations, optimal control, NYC Taxi and Limousine Commission, simulation
-Library of Congress Classification:
-HE5620.R53 (Ridesharing), with secondary classifications QA274.2 (Stochastic analysis) and QA402.3 (Control theory)
+\end{abstract}
+
+\begin{IEEEkeywords}
+\keywords
+\end{IEEEkeywords}
+
+\end{document}
+
+
+
+
+%Library of Congress Classification: HE5620.R53 (Ridesharing), with secondary classifications QA274.2 (Stochastic analysis) and QA402.3 (Control theory)
 
