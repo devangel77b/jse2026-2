@@ -1,0 +1,261 @@
+\documentclass[letterpaper,11pt,electronic,
+papers=final,
+twoside,
+linkcolor=blue,urlcolor=blue]{confproc}
+
+\renewcommand{\procpdfauthor}{Dennis Evangelista, Manalapan High School}
+\renewcommand{\procpdftitle}{Journal of Science \& Engineering}
+\renewcommand{\procchead}{}
+\renewcommand{\proclhead}{}
+\renewcommand{\proccfoot}{\thepage}
+
+\author{\procpdfauthor}
+\title{\procpdftitle}
+\date{June 16, 2026}
+\renewcommand{\PAPERPATH}{.}
+%\renewcommand{\paperauthorstyle}{\texorpdfstring{\break}{, }}
+
+\makeindex
+
+\usepackage{pdfpages}
+\usepackage{helvet,mathptmx}
+%\renewcommand{\contentsname}{{\normalfont\sffamily Journal of\medskip~}\\{\normalfont\Huge Science \& Engineering}}
+\renewcommand{\contentsname}{}
+\usepackage{verse}
+
+\begin{document}
+\frontmatter
+\setcounter{page}{1}
+%\pdfbookmark[0]{Preamble}{preamble}
+\pdfbookmark[0]{Cover}{cover}
+%\maketitle
+\index{Leung, Wai Him}
+\includepdf[pages=1]{cover}
+\newpage
+\input{masthead.tex}
+\otherpagestyle
+\pdfbookmark[0]{Table of Contents}{toc}
+\tableofcontents
+\addtocontents{toc}{{\normalfont\sffamily\Large Journal of\medskip~}\\{\normalfont\Huge Science \& Engineering}\medskip\\}
+\makeatletter
+\addtocontents{toc}{Volume 2, Number 8, \@date\bigskip\\}
+\makeatother
+\addtocontents{toc}{\emph{From the cover:} Science \& Engineering class of 2026. \emph{Cover image: Mr.~Wai Him Leung P'26.} \bigskip\\}
+\addtocontents{toc}{\textbf{Special issue: Science \& Engineering Senior Projects and Internships, Semester II, June 16, 2026.} \bigskip\\}
+% Haiku here
+\input{sne-acknowledgements.tex}
+\input{frhsd-acknowledgements.tex}
+%\input{keynote-bio.tex}
+\input{levin.tex}
+\input{pepper.tex}
+
+\mainmatter
+\setcounter{page}{119}
+
+% Next line is a hack necessary to not waste pages
+\renewcommand{\cleardoublepage}{}
+
+
+
+\session{Internships, session 1, main auditorium, 7:30--8:37 AM, block 1}
+\procpaper[%
+title={Internship at I House Architecture},
+author={Vijita Ayyangar and Mimie Lusardi},
+index={\index{Ayyangar, Vijita}\index{Lusardi, Mimie}},
+]{/ayyangar/ayyangar}
+
+\procpaper[%
+title={Visualizing sidereal and solar time in honor of Karl Jansky: Internship at IEEE, AT\&T, and Bell Labs},
+author={Tushaar Akula, Cole Canada, K August, and T M Willis III},
+index={\index{Canada, Cole}\index{Akula, Tushaar}\index{August, K}\index{Willis, T M, III}},
+]{/akula/akula}
+
+\procpaper[%
+title={Manual segmentation of femoral arteries in PET/CT images: Internship with University of Pennsylvania},
+author={Dia Avalur},
+index={\index{Avalur, Dia}},
+]{/davalur/davalur}
+
+\procpaper[%
+title={Secure identity impersonation for Commvault automated file operations: Internship at Commvault},
+author={Rohan Avalur and Sanath Kumar},
+index={\index{Avalur, Rohan}\index{Kumar, Sanath}},
+]{/ravalur/ravalur}
+
+\procpaper[%
+title={Modeling swarm spacecrafts in Python: Internship at Girl in Space Club},
+author={Aleksandra Castravet Guimaraes, Jake Chin, and Sabrina Thompson},
+index={\index{Chin, Jake}\index{Castravet Guimaraes, Aleksandra}\index{Thompson, Sabrina}},
+]{/chin/chin}
+
+\procpaper[%
+title={Optimizing the fabrication process of microspheres for extended-release drug delivery: Internship at Acon Pharmacy},
+author={Emily Chen and Petra Rofman},
+index={\index{Chen, Emily}\index{Rofman, Petra}},
+]{/chen/chen}
+
+\procpaper[%
+title={Recurring malware checker using MISP: Internship at Commvault},
+author={Ethan Fuks},
+index={\index{Fuks, Ethan}},
+]{/fuks/fuks}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\session{Projects and Internships, session 2, main auditorium, 8:42--9:49 AM, block 2}
+\procpaper[%
+title={Internship at Matrix New World Engineering},
+author={Anton Lavrenov},
+index={\index{Lavrenov, Anton}},
+]{/lavrenov/lavrenov}
+
+\procpaper[%
+title={The Bridges of Monmouth County: Internship at Monmouth County Engineering},
+author={Ryan Leung},
+index={\index{Leung, Ryan}},
+]{/leung/leung}
+
+\procpaper[%
+title={Waterfront civil engineering: Internship at Waterman LLC},
+author={Edmund Lee},
+index={\index{Lee, Edmund}},
+]{/lee/lee}
+
+\procpaper[%
+title={Math-focused screenreader for accessibility: Internship at IEEE},
+author={Aryanna Cetrulo, Anika Tokala, and K August},
+index={\index{Cetrulo, Aryanna}\index{Tokala, Anika}\index{August, K}},
+]{/cetrulo/cetrulo}
+
+\procpaper[%
+title={Operational Longitudinal Analytics Validation Engine (OLAVE) for the National Football League (NFL): Internship at CAHSAA AT\&T},
+author={Vasudevan Govardhanen and Siddharth Kedharnath},
+index={\index{Govardhanen, Vasudevan}\index{Kedharnath, Siddharth}},
+]{/govardhanen/govardhanen}
+
+\procpaper[%
+title={Interactive and data-driven web applications: Internship at WIT},
+author={Joshua Perle, Clay Stevens, and Thomas Hopkins},
+index={\index{Perle, Joshua}\index{Stevens, Clay}\index{Hopkins, Thomas}},
+]{/perle/perle}
+
+\procpaper[%
+title={Mathematically modeling the spread of opinions},
+author={Aidan Dumalagan, Brandon Heller, and Sameera Patil},
+index={\index{Dumalagan, Aidan}\index{Patil, Sameera}\index{Heller, Brandon}},
+]{/dumalagan/dumalagan}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\session{Projects, session 3, main auditorium, 9:54--11:01 AM, block 3}
+\procpaper[%
+title={Augmented reality laser tag},
+author={Daniel Altman, Daivik Jajoo, and Rishith Chandra Kilaru},
+index={\index{Jajoo, Daivik}\index{Altman, Daniel}\index{Kilaru, Rishith Chandra}},
+]{/altman/altman}
+
+\procpaper[%
+title={Translating road signs in real time onto heads up displays},
+author={Jophy Lin and Sagarika Yagnyeshwaran},
+index={\index{Lin, Jophy}\index{Yagnyeshwaran, Sagarika}},
+]{/lin/lin}
+
+\procpaper[%
+title={Study on methods of memorization},
+author={Jake Cacciarelli, Kriti Malhotra, and Samay Prabhu},
+index={\index{Cacciarelli, Jake}\index{Malhotra, Kriti}\index{Prabhu, Samay}},
+]{/cacciarelli/cacciarelli}
+
+\procpaper[%
+title={Rock paper scissors robot hand},
+author={Gage Grant and Jason Donovan Katz},
+index={\index{Grant, Gage}\index{Katz, Jason Donovan}},
+]{/grant/grant}
+
+\procpaper[%
+title={Optimization of sensor placement for water network contamination detection},
+author={Joel D'Souza and Adrit Sikdar},
+index={\index{D'Souza, Joel}\index{Sikdar, Adrit}},
+]{/dsouza/dsouza}
+
+\procpaper[%
+title={Grapple gun},
+author={Callie Butash, Srilekha Dantu, and Connor Paszkiewiecz},
+index={\index{Butash, Callie}\index{Dantu, Srilekha}\index{Paszkiewiecz, Connor}},
+]{/butash/butash}
+
+\procpaper[%
+title={Laser sound visualization},
+author={Nitika Kishore and Dev Parekh},
+index={\index{Kishore, Nitika}\index{Parekh, Dev}},
+]{/kishore/kishore}
+
+
+
+
+
+
+
+
+\session{Projects, session 4, main auditorium, 11:47 AM--12:54 PM, block 4}
+\procpaper[%
+title={Biomechanics of a tennis serve},
+author={Miguel Arenas, Brady Gorelczenko, and Timur Neyir},
+index={\index{Arenas, Miguel}\index{Gorelczenko, Brady}\index{Neyir, Timur}},
+]{/arenas/arenas}
+
+\procpaper[%
+title={Spy car: Wireless remote control camera robot with live streaming},
+author={Grace Nealon, Andrew Kabatsky, and Sharone Krasnopolsky},
+index={\index{Kabatsky, Andrew}\index{Krasnopolsky, Sharone}\index{Nealon, Grace}},
+]{/kabatsky/kabatsky}
+
+
+\session{Junior Projects, main auditorium, 11:47 AM --12:54 PM, block 4}
+
+
+\session{Special presentation for the Class of 2026, main auditorium, 12:59--2:06 PM, block 5}
+
+
+
+
+
+
+\backmatter
+%\bibliographystyle{plain}
+%\bibliography{\procbibfile}
+
+\insertindex
+
+% get on even page?!
+%\includepdf[pages=1]{main-confproc-old.pdf}
+\end{document}
