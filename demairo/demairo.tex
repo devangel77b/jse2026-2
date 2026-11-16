@@ -1,0 +1,37 @@
+\documentclass[12pt,conference,onecolumn]{IEEEtran}
+
+\usepackage[hidelinks]{hyperref}
+
+\title{Know before you buy: a profit and pricing app for clothing resellers}
+\author{%
+\IEEEauthorblockN{Blaise Demairo}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427mreznik@frhsd.com}{427mreznik@frhsd.com}}\and
+\IEEEauthorblockN{Ethan Sobel}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:427ssanrkitya@frhsd.com}{427ssankritya@frhsd.com}}
+}
+
+\date{January 27, 2027}
+
+\newcommand{\keywords}{internship, CAHSAA}
+
+\usepackage{hyperref}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={Blaise Demairo and Ethan Sobel},
+pdfkeywords={\keywords}}}
+\makeatother
+
+\begin{document}
+\maketitle 
+
+\begin{abstract}
+Online clothing resale has grown into a popular side business on apps like Depop, eBay, and Poshmark, but each platform charges different selling, processing, and promotion fees, and many sales close through discounted buyer offers. As a result, an item that looks profitable in the store can lose money once fees and shipping are counted, and most existing reseller tools only help after the purchase is already made. Through this internship project, we built Reselligent, a web and mobile app that answers the question before any money is spent. Its Deal Calculator compares fees, profit, and return on investment across six resale platforms and gives a clear Buy, Maybe, or Skip verdict. After purchase, the app uses the seller’s real sales history to recommend a list price, schedules price drops with a markdown curve modeled on Newton’s Law of Cooling, and advises whether to accept, counter, or decline a buyer’s offer. The app is live on the browser and phones, and its math is verified by our own tests and Claude AI. Next, we will connect eBay’s official API for live market prices and test the app on every real buy and sale through January, comparing the results with earlier sales to determine whether seeing the numbers before buying leads to fewer bad buys, more profit per item, and faster sales.
+\end{abstract}
+
+\begin{IEEEkeywords}
+\keywords
+\end{IEEEkeywords}
+
+\end{document}
+
+
